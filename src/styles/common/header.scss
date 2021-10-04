@@ -1,3 +1,13 @@
 a {
   font-size: inherit;
 }
+
+.popup {
+  background-color: #FED097;
+  text-align: center;
+  @include roboto-normal(16px, 24px);
+
+  &__link {
+    color: black;
+  }
+}
