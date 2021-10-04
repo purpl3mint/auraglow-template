@@ -28,9 +28,9 @@
   "author": "Dmitry Berezin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/purpl3mint/Ninja-Boilerplate/issues"
+    "url": "https://github.com/purpl3mint/auraglow-template/issues"
   },
-  "homepage": "https://github.com/purpl3mint/Ninja-Boilerplate#readme",
+  "homepage": "https://github.com/purpl3mint/auraglow-template#readme",
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
