@@ -4,6 +4,7 @@ function cleanBuild() {
     return del('build')
 }
 
+
 function cleanReport() {
     return del('reports')
 }
