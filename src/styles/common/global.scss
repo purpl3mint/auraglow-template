@@ -25,3 +25,12 @@ a {
   width: 1300px;
   margin: 0 auto;
 }
+
+.btn {
+  display: inline-block;
+  padding: 15px 31px 15px 32px;
+  background-color: $color-blue-3;
+  border-radius: 31px;
+  color: $color-white;
+  text-decoration: none;
+}

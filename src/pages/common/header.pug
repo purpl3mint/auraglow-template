@@ -3,23 +3,26 @@ header.header
     .wrapper
       span.popup__text New look, new products. Available exclusively at 
       a(href="#").popup__link Auraglow.com
-    
-  nav.nav
-    .wrapper 
-      img(src="./img/logo-black.png" alt="logo").nav__logo
-      ul.nav__links
-        li.nav__link-item
-          a(href="#").nav__anchor Products 
-        li.nav__link-item
-          a(href="#").nav__anchor Our Story 
-        li.nav__link-item
-          a(href="#").nav__anchor Reviews
-        li.nav__link-item
-          a(href="#").nav__anchor Virtual Mirror 
-      div.nav__cart
-        img(src="./img/cart.png" alt="Cart")
   
-  .header__title
-    .wrapper
-      h1.header__title-text Oral care is self care.
-      a(href="#").btn Find your glow
+  .header__content
+    nav.nav
+      .wrapper 
+        a(href="#").nav__logo-link
+          img(src="./img/logo-black.png" alt="logo").nav__logo
+        ul.nav__links
+          li.nav__link-item
+            a(href="#").nav__anchor Products 
+          li.nav__link-item
+            a(href="#").nav__anchor Our Story 
+          li.nav__link-item
+            a(href="#").nav__anchor Reviews
+          li.nav__link-item
+            a(href="#").nav__anchor Virtual Mirror 
+        div.nav__cart
+          a(href="#").nav__cart-link
+            img(src="./img/cart.png" alt="Cart").nav__cart-image
+    
+    .header__title
+      .wrapper
+        h1.header__title-text Oral care is self care.
+        a(href="#").btn.btn-header Find your glow

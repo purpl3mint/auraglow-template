@@ -3,11 +3,66 @@ a {
 }
 
 .popup {
-  background-color: #FED097;
+  background-color: $color-orange;
   text-align: center;
   @include roboto-normal(16px, 24px);
 
   &__link {
-    color: black;
+    color: $color-dark;
+  }
+}
+
+.header{
+  &__content {
+    background-image: url("../img/header-bg.png");
+  }
+
+  &__title {
+    &-text {
+    @include roboto-normal(81px, 81px);
+    display: block;
+    width: 418px;
+    margin-bottom: 50px;
+    color: $color-white;
+    }
+
+    .btn-header {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.nav {
+  padding-top: 10px;
+  margin-bottom: 300px;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    margin-top: 18px;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+
+  &__link-item {
+    display: block;
+    margin-right: 46px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__anchor {
+    color: $color-white;
+    margin-right: 46px;
   }
 }
