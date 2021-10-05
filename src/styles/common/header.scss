@@ -3,13 +3,47 @@ a {
 }
 
 .popup {
+  position: relative;
   background-color: $color-orange;
   text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
   @include roboto-normal(16px, 24px);
 
   &__link {
     color: $color-dark;
   }
+
+  &__close {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 12px;
+    right: 15px;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -1px;
+      right: 7px;
+      width: 1px;
+      height: 19px;
+      background-color: black;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  
 }
 
 .header{
