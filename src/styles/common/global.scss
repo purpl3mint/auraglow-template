@@ -3,6 +3,7 @@
 *::after {
   box-sizing: inherit;
   @include roboto-normal(16px, 24px);
+  color: $color-dark;
 }
 
 html {
@@ -33,4 +34,14 @@ a {
   border-radius: 31px;
   color: $color-white;
   text-decoration: none;
+
+  &_big {
+    display: inline-block;
+    padding: 15px 31px 15px 32px;
+    background-color: $color-blue-3;
+    border-radius: 31px;
+    color: $color-white;
+    text-decoration: none;
+    width: 100%;
+  }
 }
