@@ -39,4 +39,10 @@ a {
     border: none;
     width: 100%;
   }
+
+  &-advantage {
+    color: $color-dark;
+    background-color: none;
+    border: 1px solid $color-dark;
+  }
 }

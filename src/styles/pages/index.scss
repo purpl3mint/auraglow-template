@@ -87,6 +87,10 @@ a {
     height: 500px;
     width: 1282px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
+
     &-ltr {
       flex-direction: row;
     }
@@ -132,7 +136,14 @@ a {
       padding: 40px;
       padding-top: 70px;
       width: 855px;
-      background-color: $color-blue-2;
+
+      &_1 {
+        background-color: $color-blue-2;
+      }
+
+      &_2 {
+        background-color: $color-blue-1;
+      }
     }
 
     &-item-name {
@@ -154,3 +165,94 @@ a {
   }
 }
 
+.hint {
+  background-color: $color-blue-1;
+  padding-top: 131px;
+  padding-bottom: 236px;
+  text-align: center;
+
+  &__image {
+    margin-bottom: 29px;
+  }
+
+  &__text {
+    @include roboto-normal(36px, 40px);
+    width: 848px;
+    margin: 0 auto;
+  }
+}
+
+.reviews {
+  background-color: $color-blue-4;
+  padding-top: 114px;
+  padding-bottom: 195px;
+  text-align: center;
+
+  &__title {
+    @include roboto-normal(18px, 30px);
+    color: $color-orange;
+    margin-bottom: 39px;
+  }
+
+  &__description {
+    display: inline-block;
+    @include roboto-normal(36px, 40px);
+    color: $color-white;
+    margin-bottom: 96px;
+  }
+}
+
+.advantages {
+  padding-top: 85px;
+  padding-bottom: 45px;
+
+  &__card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin-bottom: 170px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-ltr {
+      flex-direction: row;
+    }
+
+    &-rtl {
+      flex-direction: row-reverse;
+    }
+
+    &-info {
+      width: 418px;
+      height: 480px;
+      position: relative;
+
+      padding: 81px 50px 20px;
+
+      &_1 {
+        background-color: $color-blue-1;
+        right: 200px;
+      }
+
+      &_2 {
+        background-color: $color-peach;
+        left: 200px;
+      }
+    }
+
+    &-title {
+      @include roboto-normal(36px, 40px);
+      margin-bottom: 50px;
+    }
+
+    &-description {
+      display: inline-block;
+      @include roboto-normal(16px, 20px);
+      margin-bottom: 98px;
+    }
+
+  }
+}
