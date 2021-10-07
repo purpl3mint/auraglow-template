@@ -3,7 +3,7 @@ footer.footer
     .footer__company
       img(src="./img/logo-white.png" alt="Logo").footer__logo
       span.footer__copyright &#169; Auraglow 2021
-    .footer__products.footer__list
+    .footer__products.footer__block
       h3.footer__products-title.footer__list-title Products
       ul.footer__products-list.footer__list
         li.footer__products-item.footer__list-item
@@ -22,7 +22,7 @@ footer.footer
           a(href="#").footer__products-anchor.footer__list-anchor Extra Strength Whitening Gel
         li.footer__products-item.footer__list-item
           a(href="#").footer__products-anchor.footer__list-anchor LED Whitening Light
-    .footer__company.footer__list
+    .footer__company.footer__block
       h3.footer__company-title.footer__list-title Company
       ul.footer__company-list.footer__list
         li.footer__company-item.footer__list-item
@@ -39,7 +39,7 @@ footer.footer
           a(href="#").footer__company-anchor.footer__list-anchor Clinical Study
         li.footer__company-item.footer__list-item
           a(href="#").footer__company-anchor.footer__list-anchor Where to Buy
-    .footer__support.footer__list
+    .footer__support.footer__block
       h3.footer__support-title.footer__list-title Support
       ul.footer__support-list.footer__list
         li.footer__support-item.footer__list-item
@@ -55,10 +55,10 @@ footer.footer
     .footer__subscribe 
       form.footer__subscribe-form
         label.footer__subscribe-signup Sign up for the latest in oral wellness
-        input(type="email")
-        button(type="button") Subscribe
+        input(type="email").footer__subscribe-mail
+        button(type="button").footer__subscribe-send.btn.btn-footer Subscribe
       .footer__subscribe-social 
         a(href="#").footer__subscribe-social-link
-          img(src="./img/fb.png" alt="Facebook link")
+          img(src="./img/fb.svg" alt="Facebook link").footer__subscribe-logo
         a(href="#").footer__subscribe-social-link
-          img(src="./img/inst.png" alt="Instagram link")
+          img(src="./img/inst.svg" alt="Instagram link").footer__subscribe-logo

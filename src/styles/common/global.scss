@@ -45,4 +45,10 @@ a {
     background-color: none;
     border: 1px solid $color-dark;
   }
+
+  &-footer {
+    color: $color-white;
+    background-color: none;
+    border: 1px solid $color-white;
+  }
 }

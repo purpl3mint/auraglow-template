@@ -8,7 +8,15 @@
     flex-direction: row;
   }
 
-  &__company {
+  &__block {
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 120px;
+    }
+  }
+
+  &__company-logo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -21,7 +29,14 @@
   }
 
   &__copyright {
+    display: inline-block;
+    width: 100%;
+    text-align: left;
     color: $color-white;
+  }
+
+  &__products {
+    width: 213px;
   }
 
 
@@ -29,8 +44,6 @@
     list-style-type: none;
     padding: 0;
     margin: 0;
-
-    margin-right: 80px;
 
     &-title {
       color: $color-orange;
@@ -55,6 +68,34 @@
 
   &__subscribe {
     width: 310px;
+    display: flex;
+    flex-direction: column;
+
+    &-signup {
+      display: inline-block;
+      @include roboto-normal(16px, 20px);
+      margin-bottom: 15px;
+      color: $color-white;
+    }
+
+    &-mail {
+      @include roboto-normal(20px, 24px);
+      width: 100%;
+      background-color: none;
+      border: none;
+      border-bottom: 1px solid $color-white;
+      color: $color-white;
+      margin-bottom: 29px;
+    }
+
+    &-send {
+      margin-bottom: 50px;
+    }
+
+    &-social-link {
+      margin-right: 24px;
+    }
+
   }
 
 }
